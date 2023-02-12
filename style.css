@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+main {
+  margin-left: 13rem;
+  margin-right: 13rem;
+}
+
+nav {
+  display: flex;
+  background-color: rgb(62, 4, 4);
+  color: white;
+  height: 6vh;
+}
+
+nav h1 {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  margin-left: auto;
+  margin-right: 0.75rem;
+  margin-top: 0.8rem;
+  justify-content: space-around;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.aboutMe,
+.portfolio,
+.resume,
+.contact {
+  width: 100%;
+}
+
+section h3 {
+  text-align: center;
+  font-size: 23px;
+}
+
+section p {
+  font-size: 18px;
+}
+.aboutMe {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutMe__text {
+  width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .flex {
+    display: block;
+  }
+  .aboutMe,
+  .portfolio,
+  .resume,
+  .contact {
+    width: 100%;
+  }
+  .aboutMe {
+    flex-direction: column;
+  }
+  .aboutMe__text {
+    width: 100%;
+  }
+}
+
+/* .w-50{
+    width:75%;
+}
+
+.w-25{
+    width:50%;
+} */
+
+.wrapper {
+    width: 100%;
+}
+
+.wrapper img {
+    width: 50%;
+    margin-left: auto;
+}
+
+
+
+.profile-pic-container {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 300px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-pic-container > img {
+  height: 120%;
+}
